@@ -25,7 +25,25 @@ body{
     text-align: left;
     letter-spacing: 0.02em;
 }
-/*Header&footer4all*/
+img{
+    display: block;
+}
+/*Header*/
+.menu{
+    border-bottom: 1px solid var(--cornflower-color);
+}
+.menu-nav{
+    display: flex;
+}
+.container{
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.menu-nav-list{
+    display: flex;
+    align-items: center;
+}
 .logo{
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
@@ -34,6 +52,7 @@ body{
     font-weight: 800;
     letter-spacing: 0.03em;
     color: var(--iris-color);
+    margin-right: 76px;
 }
 .link{
     text-decoration: none;
@@ -44,6 +63,11 @@ body{
 }
 .list{
     list-style-type: none;
+   
+}
+.nav-list{
+    display: flex;
+    gap: 40px;
 }
 .nav-menu-item{
     font-weight: 500;
@@ -51,6 +75,8 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navi-blue-color);
+    padding: 24px 0;
+
 }
 .nav-menu-item.link{
     text-decoration: none;
@@ -64,6 +90,10 @@ body{
 }
 address{
     font-style: normal;
+}
+.address-list{
+    display: flex;
+    gap: 40px;
 }
 .list-contacts{
     font-size: 16px;
@@ -83,8 +113,10 @@ address{
 .list-contacts:focus {
     color: var(--ocean-color);
 }
+/*Footer*/
 .footer-section {
     background-color: var(--navi-blue-color);
+    padding: 100px 0;
 }
 .footer-logo {
     font-family: "Raleway", sans-serif;
@@ -94,6 +126,8 @@ address{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris-color);
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .accent-footer {
     color: var(--cloud-color);
@@ -102,27 +136,40 @@ address{
     line-height: 1.5;
     color: var(--cloud-color);
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
 /*index.html*/
+.title-section{
+    background-color: var(--navi-blue-color);
+    padding: 188px 0;
+}
 .title{
     color: var(--white-color);
     text-align: center;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
 }
 .order-service-btn{
     cursor: pointer;
     color: var(--white-color);
     background-color: var(--iris-color);
     border: none;
+    border-radius: 4px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    margin: 0 auto;
+  
 }
 .order-service-btn:hover{
     background-color: var(--ocean-color);
@@ -130,18 +177,33 @@ address{
 .order-service-btn:focus{
     background-color: var(--ocean-color);
 }
+.strategy-section{
+    padding: 120px 0;
+}
+.stratgy-section-list{
+    display: flex;
+    gap: 24px;
+}
+.stratgy-section-item{
+    flex-basis: calc((100% - 72px) / 4);
+}
 .strategy-section-title{
     color: var(--navi-blue-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .strategy-section-text{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate-color);
+}
+.product-section{
+    padding-bottom: 120px;
+    text-align: center;
 }
 .product-section-title{
 font-size: 36px;
@@ -150,21 +212,23 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color:var(--navi-blue-color);
+margin-bottom: 72px;
+}
+.product-section-list{
+    display: flex;
+    gap: 24px;
+}
+.product-section-item{
+    flex-basis: calc((100% - 48px) / 3);
 }
 
-.title-section{
-    background-color: var(--navi-blue-color);
-    text-align: center;
-}
-.product-section{
-    text-align: center;
-}
 .product-section > img{
     border: 1px solid var(--cornflower-color);
 }
 .team-section{
     background-color: var(--cloud-color);
     text-align: center;
+    padding: 120px 0;
 }
 .team-section-title{
     font-size: 36px;
@@ -173,9 +237,20 @@ color:var(--navi-blue-color);
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--navi-blue-color);
+    margin-bottom: 72px;
+}
+.team-section-list{
+    display: flex;
+    gap: 24px;
+}
+.team-cards-item{
+    background-color: var(--white-color);
+    flex-basis: ((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-cards{
-    background-color: var(--white-color);
+    padding: 32px 16px;
+
 }
 .team-cards-title{
     font-weight: 500;
@@ -183,14 +258,27 @@ color:var(--navi-blue-color);
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navi-blue-color);
+    text-align: center;
+    margin-bottom: 8px;
 }
 .team-cards-text{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate-color);
+    text-align: center;
 }
 /*Portfolio.html*/
+.portfolio-section{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+.filter-button-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px
+}
 .filter-button{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -199,16 +287,35 @@ color:var(--navi-blue-color);
     letter-spacing: 0.04em;
     color: var(--iris-color);
     background-color: var(--cloud-color);
-    cursor: pointer
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid var(--cornflower-color);
     
 }
 .filter-button:hover{
     color: var(--white-color);
     background-color: #404BBF;
+    border: 1px solid transparent;
 }
 .filter-button:focus{
     color: var(--white-color);
     background-color: #404BBF;
+    border: 1px solid transparent
+}
+.product-item-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.product-item{
+    width: calc((100% - 48px) / 3);
+}
+.product-card{
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower-color);
+    
 }
 .product-title{
     font-weight: 500;
@@ -216,6 +323,7 @@ color:var(--navi-blue-color);
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navi-blue-color);
+    margin-bottom: 8px;
 }
 .product-text{
     font-size: 16px;
