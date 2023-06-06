@@ -36,7 +36,7 @@ img{
     display: flex;
 }
 .container{
-    width: 1158px;
+    width: 1128px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -206,13 +206,13 @@ address{
     text-align: center;
 }
 .product-section-title{
-font-size: 36px;
-line-height: 1.11;
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-color:var(--navi-blue-color);
-margin-bottom: 72px;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color:var(--navi-blue-color);
+    margin-bottom: 72px;
 }
 .product-section-list{
     display: flex;
@@ -250,7 +250,6 @@ margin-bottom: 72px;
 }
 .team-cards{
     padding: 32px 16px;
-
 }
 .team-cards-title{
     font-weight: 500;
