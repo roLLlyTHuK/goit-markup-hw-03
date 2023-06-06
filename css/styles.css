@@ -28,6 +28,11 @@ body{
 img{
     display: block;
 }
+.container{
+    width: 1128px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 /*Header*/
 .menu{
     border-bottom: 1px solid var(--cornflower-color);
@@ -35,11 +40,7 @@ img{
 .menu-nav{
     display: flex;
 }
-.container{
-    width: 1128px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+
 .menu-nav-list{
     display: flex;
     align-items: center;
@@ -213,10 +214,13 @@ address{
     text-transform: capitalize;
     color:var(--navi-blue-color);
     margin-bottom: 72px;
+
 }
 .product-section-list{
     display: flex;
     gap: 24px;
+    padding: 0;
+    margin: 0;
 }
 .product-section-item{
     flex-basis: calc((100% - 48px) / 3);
@@ -243,8 +247,9 @@ address{
 .team-section-list{
     display: flex;
     gap: 24px;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    
 }
 .team-cards-item{
     background-color: var(--white-color);
