@@ -34,7 +34,10 @@ img{
     padding: 0 15px;
 }
 .visually-hidden {
-   display: none;
+  
+  visibility: hidden;
+}
+
 }
 /*Header*/
 .menu{
