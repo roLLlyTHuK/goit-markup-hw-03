@@ -237,11 +237,13 @@ address{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--navi-blue-color);
+    margin: 0;
     margin-bottom: 72px;
 }
 .team-section-list{
     display: flex;
     gap: 24px;
+    margin 0;
     padding: 0;
 }
 .team-cards-item{
