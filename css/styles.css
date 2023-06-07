@@ -36,6 +36,14 @@ img{
     margin: 0 auto;
     padding: 0 15px;
 }
+.main-title{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF;
+}
 .visually-hidden {
         position: absolute;
         width: 1px;
