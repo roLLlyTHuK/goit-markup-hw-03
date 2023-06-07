@@ -36,6 +36,7 @@ img{
     margin: 0 auto;
     padding: 0 15px;
 }
+/* попытка убрать ошибку с портфолио
 .main-title{
     font-weight: 700;
     font-size: 56px;
@@ -43,7 +44,7 @@ img{
     letter-spacing: 0.02em;
     text-align: center;
     color: #FFFFFF;
-}
+}*/
 .visually-hidden {
         position: absolute;
         width: 1px;
