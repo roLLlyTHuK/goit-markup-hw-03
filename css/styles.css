@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap');
 :root{
 /*color-scheme*/
+
     --iris-color: #4D5AE5;
     --ocean-color: #404BBF;
     --navi-blue-color: #2E2F42;
@@ -9,13 +10,14 @@
     --light-slate-color: #8E8F99;
     --cornflower-color: #E7E9FC;
     --cloud-color: #F4F4FD;
-    --navi-blue-modal-color: #2E2F42;
-    --gray-color: #2E2F42;
+    --navi-blue-modal-color: rgba(46, 47, 66, 0.4);
+    --gray-color: rgba(46, 47, 66, 0.7);
     --white-color: #FFFFFF;
     --dairy-color: #FCFCFC;
 
 }
 /*Global*/
+
 body{
     background-color: var(--white-color);
     font-family: "Roboto", sans-serif;
@@ -34,7 +36,6 @@ img{
     margin: 0 auto;
     padding: 0 15px;
 }
- 
 .visually-hidden {
         position: absolute;
         width: 1px;
@@ -47,8 +48,6 @@ img{
         clip: rect(0 0 0 0);
         overflow: hidden;
     }
- 
-
 .list {
     list-style-type: none;
     margin: 0;
@@ -63,14 +62,15 @@ p{
     padding: 0;
     margin: 0;
 }
+
 /*Header*/
+
 .menu{
     border-bottom: 1px solid var(--cornflower-color);
 }
 .menu-nav{
     display: flex;
 }
-
 .menu-nav-list{
     display: flex;
     align-items: center;
@@ -94,7 +94,6 @@ p{
 .accent{
     color: var(--navi-blue-color);
 }
-
 .nav-list{
     display: flex;
     gap: 40px;
@@ -145,7 +144,9 @@ address{
 .list-contacts:focus {
     color: var(--ocean-color);
 }
+
 /*Footer*/
+
 .footer-section {
     background-color: var(--navi-blue-color);
     padding: 100px 0;
@@ -170,7 +171,10 @@ address{
     letter-spacing: 0.02em;
     max-width: 264px;
 }
+
 /*index.html*/
+/*Перша секція*/
+
 .title-section{
     background-color: var(--navi-blue-color);
     padding: 188px 0;
@@ -209,6 +213,9 @@ address{
 .order-service-btn:focus{
     background-color: var(--ocean-color);
 }
+
+/*Друга секція*/
+
 .strategy-section{
     padding: 120px 0;
 }
@@ -233,6 +240,9 @@ address{
     letter-spacing: 0.02em;
     color: var(--slate-color);
 }
+
+/*Третя секція*/
+
 .product-section{
     padding-bottom: 120px;
     text-align: center;
@@ -256,10 +266,12 @@ address{
 .product-section-item{
     width: calc((100% - 48px) / 3);
 }
-
 .product-section > img{
     border: 1px solid var(--cornflower-color);
 }
+
+/*Четверта секція*/
+
 .team-section{
     background-color: var(--cloud-color);
     text-align: center;
@@ -307,7 +319,9 @@ address{
     color: var(--slate-color);
     text-align: center;
 }
+
 /*Portfolio.html*/
+
 .portfolio-section{
     padding-top: 96px;
     padding-bottom: 120px;
