@@ -38,12 +38,24 @@ img{
    width: 1px; 
    height: 1px; 
    margin: -1px; 
+   border: 0;
    padding: 0; 
+
+   white-space: nowrap;
+   clip-path: inset(100%); 
+   clip: rect(0 0 0 0);
    overflow: hidden; 
-   border: 0; 
-   clip: rect(0 0 0 0) 
  }
 
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+h1, h2, h3, h4, h5, h6, p{
+    padding: 0;
+    margin: 0;
 }
 /*Header*/
 .menu{
@@ -56,6 +68,7 @@ img{
 .menu-nav-list{
     display: flex;
     align-items: center;
+    padding: 24px 0;
 }
 .logo{
     font-family: 'Raleway', sans-serif;
@@ -74,10 +87,7 @@ img{
 .accent{
     color: var(--navi-blue-color);
 }
-.list{
-    list-style-type: none;
-   
-}
+
 .nav-list{
     display: flex;
     gap: 40px;
@@ -103,6 +113,8 @@ img{
 }
 address{
     font-style: normal;
+    padding: 24px 0;
+    margin-left: auto;
 }
 .address-list{
     display: flex;
